@@ -1,3 +1,65 @@
 body {
    background-image: url(<%= asset_path 'paper.png' %>);
 }
+
+ body {
+   padding-left: 0;
+   padding-right: 0;
+ }
+ #page-wrapper {
+   position: relative;
+   width: 980px;
+   /* centers the document */
+   margin: 0 auto;
+   /*
+  hides anything drawn off canvas.
+  remove overflow and height to see things drawn off canvas.
+  */
+   overflow: hidden;
+   height: 1000px;
+ }
+ /* This makes absolutely positioned elements like p, h1,
+     and some bootstrap elements placed properly. */
+ #absolute-wrapper p, #absolute-wrapper h1, #absolute-wrapper h2, #absolute-wrapper h3, #absolute-wrapper h4, #absolute-wrapper h5, #absolute-wrapper h6 {
+   margin-top: 0 !important;
+ }
+ #absolute-wrapper {
+   position: relative;
+   width: 980px;
+   margin: 0 auto;
+   height: 1px;
+ }
+ #absolute-wrapper .images {
+   width: 380px;
+   height: 391px;
+   position: absolute;
+   top: 129px;
+   left: 520px;
+ }
+ #absolute-wrapper .images .heading {
+   height: 40px;
+   width: 369px;
+ }
+ #absolute-wrapper .images .thumbnails .span4 {
+   width: 100px;
+ }
+ #absolute-wrapper .images .thumbnails .thumbnail .image {
+   height: 80px;
+   width: 80px;
+ }
+ #absolute-wrapper div.div-1 {
+   position: absolute;
+ }
+ #absolute-wrapper div.div-2 {
+   width: 400px;
+   height: 380px;
+   top: 150px;
+   left: 2%;
+ }
+ #absolute-wrapper .div-1.div-2 .image {
+   height: 167px;
+   width: 200px;
+ }
+ #absolute-wrapper .div-1.div-2 p span {
+   color: #d4cfcf;
+ }
